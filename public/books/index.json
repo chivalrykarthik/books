@@ -1,0 +1,34 @@
+[
+    {
+        "id": "Maximum_Achievement",
+        "title": "Maximum Achievement",
+        "author": "Brian Tracy",
+        "type": "folder",
+        "cover": "📚",
+        "description": "A comprehensive guide to personal achievement and success",
+        "chapters": [
+            {
+                "id": "Chapter-1",
+                "title": "Make Your Life a Masterpiece"
+            },
+            {
+                "id": "Chapter-9",
+                "title": "Mastering Human Relationships"
+            }
+        ]
+    },
+    {
+        "id": "atomicHabits",
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "type": "file",
+        "cover": "⚛️",
+        "description": "Tiny changes, remarkable results - An easy way to build good habits",
+        "chapters": [
+            {
+                "id": "full",
+                "title": "Complete Summary"
+            }
+        ]
+    }
+]
