@@ -81,7 +81,6 @@ export default function Reader() {
                     <Link to={`/book/${bookId}`} className="nav-btn">
                         📑 All Chapters
                     </Link>
-
                     <button
                         className="nav-btn"
                         onClick={() => nextChapter && navigate(`/book/${bookId}/chapter/${nextChapter.id}`)}
