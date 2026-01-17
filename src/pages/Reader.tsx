@@ -2,6 +2,8 @@ import { useState, useEffect, useCallback } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import { useChapter } from '../hooks/useBooks';
+import LoadingSpinner from '../components/LoadingSpinner';
+import EmptyState from '../components/EmptyState';
 
 export default function Reader() {
     const { bookId, chapterId } = useParams<{ bookId: string; chapterId: string }>();
@@ -9,7 +11,6 @@ export default function Reader() {
     const { content, book, loading, error } = useChapter(bookId, chapterId);
     const [progress, setProgress] = useState(0);
 
-    // Track scroll progress
     const handleScroll = useCallback(() => {
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight - windowHeight;
@@ -23,7 +24,6 @@ export default function Reader() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [handleScroll]);
 
-    // Get current chapter index and nav info
     const currentIndex = book?.chapters.findIndex(c => c.id === chapterId) ?? -1;
     const prevChapter = currentIndex > 0 ? book?.chapters[currentIndex - 1] : null;
     const nextChapter = book && currentIndex < book.chapters.length - 1
@@ -32,24 +32,11 @@ export default function Reader() {
     const currentChapter = book?.chapters[currentIndex];
 
     if (loading) {
-        return (
-            <div className="loading">
-                <div className="loading-spinner"></div>
-                <p>Loading chapter...</p>
-            </div>
-        );
+        return <LoadingSpinner message="Loading chapter..." />;
     }
 
     if (error || !book || !content) {
-        return (
-            <div className="container">
-                <div className="empty-state">
-                    <div className="empty-state-icon">📖</div>
-                    <p>{error || 'Chapter not found'}</p>
-                    <Link to="/" className="back-link">← Back to Library</Link>
-                </div>
-            </div>
-        );
+        return <EmptyState message={error || 'Chapter not found'} showBackLink />;
     }
 
     return (

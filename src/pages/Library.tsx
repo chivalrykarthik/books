@@ -1,26 +1,28 @@
 import BookCard from '../components/BookCard';
+import LoadingSpinner from '../components/LoadingSpinner';
+import EmptyState from '../components/EmptyState';
 import { useBooks } from '../hooks/useBooks';
 
 export default function Library() {
     const { books, loading, error } = useBooks();
 
     if (loading) {
-        return (
-            <div className="loading">
-                <div className="loading-spinner"></div>
-                <p>Loading your library...</p>
-            </div>
-        );
+        return <LoadingSpinner message="Loading your library..." />;
     }
 
     if (error) {
+        return <EmptyState icon="⚠️" message={`Error: ${error}`} />;
+    }
+
+    if (books.length === 0) {
         return (
-            <div className="container">
-                <div className="empty-state">
-                    <div className="empty-state-icon">⚠️</div>
-                    <p>Error: {error}</p>
+            <main className="container">
+                <div className="page-title">
+                    <h1>📚 My Book Library</h1>
+                    <p className="page-subtitle">Summaries of books I've read</p>
                 </div>
-            </div>
+                <EmptyState message="No books found. Add some markdown summaries to get started!" />
+            </main>
         );
     }
 
@@ -30,19 +32,11 @@ export default function Library() {
                 <h1>📚 My Book Library</h1>
                 <p className="page-subtitle">Summaries of books I've read</p>
             </div>
-
-            {books.length === 0 ? (
-                <div className="empty-state">
-                    <div className="empty-state-icon">📖</div>
-                    <p>No books found. Add some markdown summaries to get started!</p>
-                </div>
-            ) : (
-                <div className="book-grid">
-                    {books.map(book => (
-                        <BookCard key={book.id} book={book} />
-                    ))}
-                </div>
-            )}
+            <div className="book-grid">
+                {books.map(book => (
+                    <BookCard key={book.id} book={book} />
+                ))}
+            </div>
         </main>
     );
 }

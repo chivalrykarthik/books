@@ -1,6 +1,6 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import { useState, useEffect } from 'react';
 import { AuthProvider, useAuth } from './hooks/useAuth';
+import { useTheme } from './hooks/useTheme';
 import Header from './components/Header';
 import Library from './pages/Library';
 import BookDetails from './pages/BookDetails';
@@ -9,20 +9,8 @@ import Login from './pages/Login';
 import './index.css';
 
 function AppContent() {
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    const saved = localStorage.getItem('book-theme');
-    return (saved as 'light' | 'dark') || 'light';
-  });
+  const { theme, toggleTheme } = useTheme();
   const { isAuthenticated } = useAuth();
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('book-theme', theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(prev => prev === 'light' ? 'dark' : 'light');
-  };
 
   if (!isAuthenticated) {
     return <Login />;

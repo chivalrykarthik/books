@@ -1,29 +1,18 @@
 import { useParams, Link } from 'react-router-dom';
-import { useBook } from '../hooks/useBooks';
+import { useBook, getChapterNumber } from '../hooks/useBooks';
+import LoadingSpinner from '../components/LoadingSpinner';
+import EmptyState from '../components/EmptyState';
 
 export default function BookDetails() {
     const { bookId } = useParams<{ bookId: string }>();
     const { book, loading, error } = useBook(bookId);
 
     if (loading) {
-        return (
-            <div className="loading">
-                <div className="loading-spinner"></div>
-                <p>Loading book details...</p>
-            </div>
-        );
+        return <LoadingSpinner message="Loading book details..." />;
     }
 
     if (error || !book) {
-        return (
-            <div className="container">
-                <div className="empty-state">
-                    <div className="empty-state-icon">📖</div>
-                    <p>{error || 'Book not found'}</p>
-                    <Link to="/" className="back-link">← Back to Library</Link>
-                </div>
-            </div>
-        );
+        return <EmptyState message={error || 'Book not found'} showBackLink />;
     }
 
     return (
@@ -41,20 +30,17 @@ export default function BookDetails() {
 
             <h2>Chapters</h2>
             <ul className="chapter-list">
-                {book.chapters.map((chapter) => {
-                    const chapterNum = chapter.id.match(/\d+/)?.[0] || chapter.id;
-                    return (
-                        <li key={chapter.id} className="chapter-item">
-                            <Link
-                                to={`/book/${book.id}/chapter/${chapter.id}`}
-                                className="chapter-link"
-                            >
-                                <span className="chapter-number">{chapterNum}</span>
-                                <span className="chapter-title">{chapter.title}</span>
-                            </Link>
-                        </li>
-                    );
-                })}
+                {book.chapters.map((chapter) => (
+                    <li key={chapter.id} className="chapter-item">
+                        <Link
+                            to={`/book/${book.id}/chapter/${chapter.id}`}
+                            className="chapter-link"
+                        >
+                            <span className="chapter-number">{getChapterNumber(chapter.id)}</span>
+                            <span className="chapter-title">{chapter.title}</span>
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </main>
     );

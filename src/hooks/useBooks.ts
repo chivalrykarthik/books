@@ -1,6 +1,18 @@
 import { useState, useEffect } from 'react';
 import type { Book } from '../types';
 
+// Shared fetch function for books index
+async function fetchBooksIndex(): Promise<Book[]> {
+    const res = await fetch(`${import.meta.env.BASE_URL}books/index.json`);
+    if (!res.ok) throw new Error('Failed to load books');
+    return res.json();
+}
+
+// Shared error handler
+function getErrorMessage(err: unknown): string {
+    return err instanceof Error ? err.message : 'Unknown error';
+}
+
 interface UseBooksResult {
     books: Book[];
     loading: boolean;
@@ -27,20 +39,10 @@ export function useBooks(): UseBooksResult {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        const fetchBooks = async () => {
-            try {
-                const res = await fetch(`${import.meta.env.BASE_URL}books/index.json`);
-                if (!res.ok) throw new Error('Failed to load books');
-                const data = await res.json();
-                setBooks(data);
-            } catch (err) {
-                setError(err instanceof Error ? err.message : 'Unknown error');
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchBooks();
+        fetchBooksIndex()
+            .then(setBooks)
+            .catch(err => setError(getErrorMessage(err)))
+            .finally(() => setLoading(false));
     }, []);
 
     return { books, loading, error };
@@ -58,26 +60,14 @@ export function useBook(bookId: string | undefined): UseBookResult {
             return;
         }
 
-        const fetchBook = async () => {
-            try {
-                const res = await fetch(`${import.meta.env.BASE_URL}books/index.json`);
-                if (!res.ok) throw new Error('Failed to load book');
-                const books: Book[] = await res.json();
+        fetchBooksIndex()
+            .then(books => {
                 const found = books.find(b => b.id === bookId);
-
-                if (!found) {
-                    throw new Error('Book not found');
-                }
-
+                if (!found) throw new Error('Book not found');
                 setBook(found);
-            } catch (err) {
-                setError(err instanceof Error ? err.message : 'Unknown error');
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchBook();
+            })
+            .catch(err => setError(getErrorMessage(err)))
+            .finally(() => setLoading(false));
     }, [bookId]);
 
     return { book, loading, error };
@@ -96,39 +86,34 @@ export function useChapter(bookId: string | undefined, chapterId: string | undef
             return;
         }
 
-        const fetchChapter = async () => {
-            try {
-                // Load book metadata first
-                const booksRes = await fetch(`${import.meta.env.BASE_URL}books/index.json`);
-                if (!booksRes.ok) throw new Error('Failed to load book');
-                const books: Book[] = await booksRes.json();
-                const foundBook = books.find(b => b.id === bookId);
+        const loadChapter = async () => {
+            const books = await fetchBooksIndex();
+            const foundBook = books.find(b => b.id === bookId);
 
-                if (!foundBook) {
-                    throw new Error('Book not found');
-                }
+            if (!foundBook) throw new Error('Book not found');
+            setBook(foundBook);
 
-                setBook(foundBook);
+            const contentPath = foundBook.type === 'folder'
+                ? `${import.meta.env.BASE_URL}books/${bookId}/${chapterId}.md`
+                : `${import.meta.env.BASE_URL}books/${bookId}.md`;
 
-                // Load chapter content
-                const contentPath = foundBook.type === 'folder'
-                    ? `${import.meta.env.BASE_URL}books/${bookId}/${chapterId}.md`
-                    : `${import.meta.env.BASE_URL}books/${bookId}.md`;
+            const contentRes = await fetch(contentPath);
+            if (!contentRes.ok) throw new Error('Failed to load chapter');
 
-                const contentRes = await fetch(contentPath);
-                if (!contentRes.ok) throw new Error('Failed to load chapter');
-                const text = await contentRes.text();
-                setContent(text);
-            } catch (err) {
-                setError(err instanceof Error ? err.message : 'Unknown error');
-            } finally {
-                setLoading(false);
-            }
+            setContent(await contentRes.text());
         };
 
-        fetchChapter();
+        loadChapter()
+            .catch(err => setError(getErrorMessage(err)))
+            .finally(() => setLoading(false));
+
         window.scrollTo(0, 0);
     }, [bookId, chapterId]);
 
     return { content, book, loading, error };
+}
+
+// Utility to extract chapter number from ID
+export function getChapterNumber(chapterId: string): string {
+    return chapterId.match(/\d+/)?.[0] || chapterId;
 }
