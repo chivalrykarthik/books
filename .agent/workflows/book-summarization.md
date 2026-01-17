@@ -64,8 +64,8 @@ When asked to summarize a chapter, follow these rules:
 
 1. When user requests a chapter summary, first confirm which book and chapter number.
 2. Read the entire chapter content carefully.
-3. Create a folder for the book if it doesn't exist: `G:\books\[Book Name]\`
-4. Create the summary file: `G:\books\[Book Name]\Chapter-[Number].md`
+3. Create a folder for the book if it doesn't exist: `E:\node\applications\books\public\books\[Book Name]\`
+4. Create the summary file: `E:\node\applications\books\public\books\[Book Name]\Chapter-[Number].md`
 5. Follow the output format exactly as specified above.
 6. Perform quality check and revise until rating is 10/10.
 7. Save the final summary to the markdown file.
