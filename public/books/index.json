@@ -1,33 +1,37 @@
 [
     {
-        "id": "Maximum_Achievement",
-        "title": "Maximum Achievement",
-        "author": "Brian Tracy",
-        "type": "folder",
-        "cover": "📚",
-        "description": "A comprehensive guide to personal achievement and success",
-        "chapters": [
-            {
-                "id": "Chapter-1",
-                "title": "Make Your Life a Masterpiece"
-            },
-            {
-                "id": "Chapter-9",
-                "title": "Mastering Human Relationships"
-            }
-        ]
-    },
-    {
         "id": "atomicHabits",
         "title": "Atomic Habits",
-        "author": "James Clear",
+        "author": "Unknown Author",
         "type": "file",
         "cover": "⚛️",
-        "description": "Tiny changes, remarkable results - An easy way to build good habits",
+        "description": "In 2003, British Cycling was in a state of disarray. The organization responsible for professional cycling in Great Britain had seen a century of p...",
         "chapters": [
             {
                 "id": "full",
                 "title": "Complete Summary"
+            }
+        ]
+    },
+    {
+        "id": "Maximum_Achievement",
+        "title": "Maximum Achievement",
+        "author": "Unknown Author",
+        "type": "folder",
+        "cover": "🏆",
+        "description": "This opening chapter sets the stage for Brian Tracy's comprehensive system for achieving success and happiness. It begins with an inspiring declara...",
+        "chapters": [
+            {
+                "id": "Chapter-1",
+                "title": "Chapter 1: Make Your Life a Masterpiece"
+            },
+            {
+                "id": "Chapter-9",
+                "title": "Chapter 9: Mastering Human Relationships"
+            },
+            {
+                "id": "Chapter-10",
+                "title": "Chapter 10: Mastering Personal Relationships"
             }
         ]
     }

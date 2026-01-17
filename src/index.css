@@ -531,6 +531,30 @@ hr {
     width: 100%;
     justify-content: center;
   }
+
+  /* Book Header Mobile */
+  .book-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .book-cover-large {
+    font-size: 4rem;
+    padding: 1rem;
+    min-width: auto;
+  }
+
+  .book-info {
+    width: 100%;
+  }
+
+  .book-description {
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 }
 
 /* Markdown Content Styles */
