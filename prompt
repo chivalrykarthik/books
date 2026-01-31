@@ -1,8 +1,8 @@
-/book-summarization  Provide detailed elaborated summary in simple English of "CHAPTER 11
-Mastering the Art of Parenting" in @Maximum_achievement_brian_tracy.pdf . Page number ranging from 223 to 236
+/book-summarization n  Provide detailed elaborated summary in simple English of "CHAPTER 11
+Mastering the Art of Parenting" in @Maximum_achievement_brian_tracy.pdf mum_achievement_brian_tracy.pdf . Page number ranging from 223 to 236
 
 Provide in depth summary of the sub sections.
 
-Store the sumarry in @public/books/Maximum_Achievement 
-Follow existing structure.
+Store the sumarry in @public/books/Maximum_Achievement _Achievement 
+Refer existing structure and follow the same.
 It should load automatically in the app

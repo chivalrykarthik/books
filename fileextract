@@ -1,0 +1,1 @@
+py .\extract_pdf_pages.py e:\node\applications\books\Maximum_achievement_brian_tracy.pdf 237 248 chapter_12_extracted.txt

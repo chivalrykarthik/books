@@ -14,7 +14,7 @@ description: Book chapter summarization workflow
 
 When asked to summarize a chapter, follow these rules:
 
-1. **Read every line carefully** — do not skip or leave out any part of the chapter.
+1. **Read every line carefully** — do not skip or leave out any part of the chapter or paragraph.
 2. **Summarize in simple English** so even a beginner can understand.
 3. **Use a storytelling style** so the summary flows like a well-written book.
 4. **For difficult concepts**, add a short analogy or example to make them simple.
@@ -38,6 +38,8 @@ When asked to summarize a chapter, follow these rules:
 
 2. **Narrative Summary (Storytelling Style)**
    * Divide into short **sections**.
+   * Provide in depth summary of each section and paragraph
+   * Think like your writing book out of a book
    * Each section flows smoothly into the next.
    * Insert **direct quotes** naturally when lines are powerful or emotional.
    * Add **examples/analogies** immediately when a concept is difficult.

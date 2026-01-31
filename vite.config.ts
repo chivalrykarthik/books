@@ -5,5 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/books/', // GitHub Pages base path
+  server: {
+    host: true,
+    port: 3000,
+  },
 })
 
