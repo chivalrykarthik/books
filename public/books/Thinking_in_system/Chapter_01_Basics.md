@@ -12,26 +12,30 @@ A system consists of three kinds of things:
 3.  **Function or Purpose**
 
 **Examples:**
-*   **Digestive System:** Elements include teeth, enzymes, and stomach. Interconnections are the flow of food and chemical signals. The function is to break down food for nutrients.
-*   **Football Team:** Elements are players, coach, and ball. Interconnections are the rules and strategies. The purpose is to win games or have fun.
-*   **School, City, Earth:** All are systems. Systems can be embedded within other systems.
+*   **Digestive System:** Elements include teeth, enzymes, stomach, and intestines. Interconnections are the physical flow of food and regulating chemical signals. The function is to break down food for nutrients and discard waste.
+*   **Football Team:** Elements are players, coach, field, and ball. Interconnections are the rules, strategies, communications, and laws of physics. The purpose is to win games, have fun, get exercise, or make money.
+*   **School, City, Factory, Corporation, National Economy, Earth:** All are systems. Systems can be embedded within other systems.
 
 Is there anything that is not a system? Yes—a random collection without connections or function, like sand scattered on a road.
-Systems have an integrity or wholeness. They can change, adapt, respond, and survive in lifelike ways, even if they contain nonliving things.
+*   **System-ness:** An old city neighborhood where people know each other is a system. A new apartment block full of strangers is not—until relationships form.
+*   Systems have an integrity or wholeness. They can change, adapt, respond, and survive in lifelike ways.
 
 ## Look Beyond the Players to the Rules of the Game
 
 **Elements** are the easiest parts to notice because they are often visible (e.g., roots, leaves, buildings, students). However, looking too closely at elements can make you "miss the forest for the trees."
 It is better to look for the **interconnections**—the relationships that hold the elements together.
-*   **Tree:** Physical flows of water and chemical signals that allow parts to respond to each other.
-*   **University:** Admission standards, grades, budgets, and the communication of knowledge.
+*   **Tree:** Interconnections include physical flows (water, sap) and chemical signals.
+    *   *Example:* If leaves lose water, pressure drops, signaling roots to take in more. If soil is dry, roots signal leaves to close pores.
+*   **University:** Admissions, degrees, exams, grades, budgets, gossip, and the communication of knowledge.
 
 Many interconnections are flows of **information**. This information holds systems together and determines how they operate. Information relationships are often harder to see than physical flows.
 
 **Function or purpose** is the hardest part to see but is often the most crucial.
 *   The best way to deduce a system's purpose is to watch its **behavior**.
-*   If a government claims to protect the environment but allocates little money to it, its purpose is not environmental protection. Purposes are deduced from what the system actually does, not what it says.
-*   System purposes might not be what any single person intends. For example, drug addiction is a result of a system involving users, dealers, police, and laws, producing a result no one wants.
+    *   *Example:* If a frog turns right, left, and backward to catch a fly, its purpose is catching flies.
+    *   *Example:* If a government claims to protect the environment but allocates little money to it, its purpose is not environmental protection.
+*   **Unintended System Purposes:** System purposes might not be what any single person intends.
+    *   *Drug Addiction:* No one wants a society with addiction, but the system includes desperate users, profit-seeking farmers/dealers/bankers, pushers, police, and wealthy neighbors. Their combined distinct goals create a system where addiction persists.
 
 **Hierarchy of Importance:**
 1.  **Function/Purpose:** Transforming this changes the system most profoundly. If you change a team's goal from winning to losing, the system changes completely.
@@ -78,9 +82,14 @@ If the outflow is higher, the level falls.
 ![Graphs showing inflow/outflow rates and resulting water stock level](images/Thinking_in_system_page38_fig2.png)
 
 **Key Principles from the Bathtub Model:**
-1.  **Control:** You can fill a bathtub by increasing the inflow **or** by decreasing the outflow. Similarly, you can increase energy security by finding new oil (inflow) or by burning less (outflow).
+1.  **Control:** You can fill a bathtub by increasing the inflow **or** by decreasing the outflow.
+    *   *Energy:* Find new oil (inflow) or burn less (outflow).
+    *   *Workforce:* Hire more (inflow) or reduce quitting/firing (outflow).
+    *   *Wealth:* Invest in new factories (inflow) or reduce wear and tear (outflow).
 2.  **Sluggishness:** **Stocks usually change slowly.** They act as delays, buffers, and shock absorbers. This momentum means systems take time to change (e.g., it takes time for a forest to grow or for pollution to clear).
-3.  **Independence:** Stocks allow inflows and outflows to be independent. You don't need to produce gasoline at the exact rate cars burn it; the stock in the tank buffers the difference.
+3.  **Independence:** Stocks allow inflows and outflows to be independent.
+    *   Gasoline in tanks allows refineries to run without matching car usage exactly.
+    *   Bank accounts let you earn and spend at different rates.
 
 ## How the System Runs Itself—Feedback
 
@@ -88,6 +97,7 @@ When a stock stays within a range or grows/declines consistently, there is likel
 A feedback loop occurs when a change in a stock affects the flows into or out of that same stock.
 *   **Bank Account:** Amount of money (stock) → Interest earned (flow) → More money.
 *   **Checking Account:** Low cash (stock) → Decision to work more (flow) → More cash.
+*   **Student Challenge:** Are there any decisions without feedback? Common suggestions: "Falling in love" and "Committing suicide."
 
 **Figure 8: How to read a stock-and-flow diagram with feedback loops**
 ![Diagram showing information link from stock back to flow](images/Thinking_in_system_page43_fig2.png)
@@ -123,8 +133,9 @@ A **Reinforcing Feedback Loop (R)** is amplifying. It generates more input the m
 
 **Examples:**
 *   **Prices and Wages:** Prices go up → Wages go up → Prices go up more.
-*   **Population:** More rabbits → More babies → More parents → Even more babies.
-*   **Erosion:** Less soil → Fewer plants → More erosion → Even less soil.
+*   **Rabbit Population:** More rabbits → More babies → More parents → Even more babies.
+*   **Soil Erosion:** Less soil → Fewer plants → More erosion → Even less soil.
+*   **Piano:** More practice → More pleasure → More practice.
 
 **Figure 12: Interest-bearing bank account**
 ![Diagram showing interest reinforcing money stock](images/Thinking_in_system_page48_fig1.png)

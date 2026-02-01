@@ -46,20 +46,22 @@ Clarity is important, but **information loss is not allowed**.
    * Keep the original order of ideas.
    * Maintain cause–effect, contrast, and sequence relationships.
    * Keep names, dates, terms, and numbers exactly as written.
+   * **Lists and Sets:** If the author lists multiple actors, components, or examples (e.g., "farmers, bankers, pushers, police"), preserve the list. Do not flatten it into a generic summary (e.g., "various people") if the diversity of the list is the point.
 
-5. **Examples and explanations**
+5.  **Examples and explanations**
 
    * If the chapter already contains examples, retain them.
-   * If a sentence is complex, you may rephrase it more clearly,
-     but **do not add new examples or interpretations**.
+   * **Specificity:** Keep the specific details that make an example concrete (e.g., "leaves closing pores" is better than "biological response").
+   * **Side Notes:** Preserve interesting asides, challenges, or "student questions" if they illustrate a core concept.
+   * If a sentence is complex, you may rephrase it more clearly, but **do not add new examples or interpretations**.
 
-6. **Quoting**
+6.  **Quoting**
 
    * If a sentence is especially important or well-written,
      you may quote it directly.
    * After a quote, explain it simply in one sentence.
 
-7. **Tone and style**
+7.  **Tone and style**
 
    * Neutral, clear, and explanatory.
    * No personal opinions.
@@ -144,6 +146,7 @@ Before finalizing:
 * Confirm that **every idea from the original chapter appears in the output**.
 * Confirm that **no new information was added**.
 * Confirm that **language is simpler, not shorter at the cost of meaning**.
+* Confirm that **lists of examples/actors are preserved and not aggressively condensed**.
 * Confirm that **all image/diagram references are preserved and properly formatted**.
 * Confirm that **tables and code blocks are intact**.
 
