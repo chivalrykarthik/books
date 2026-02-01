@@ -53,7 +53,26 @@ export default function Reader() {
                 </nav>
 
                 <article className="markdown-content">
-                    <Markdown>{content}</Markdown>
+                    <Markdown
+                        components={{
+                            img: ({ node, ...props }) => {
+                                const { src } = props;
+                                const isRelative = src && !src.startsWith('/') && !src.startsWith('http');
+                                const imageSrc = isRelative
+                                    ? `${import.meta.env.BASE_URL}books/${bookId}/${src}`
+                                    : src;
+                                return (
+                                    <img
+                                        {...props}
+                                        src={imageSrc}
+                                        style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '1rem 0' }}
+                                    />
+                                );
+                            },
+                        }}
+                    >
+                        {content}
+                    </Markdown>
                 </article>
 
                 <nav className="chapter-nav">

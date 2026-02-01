@@ -1,0 +1,223 @@
+# PDF Extraction: Thinking_in_system
+# Pages: 35 to 38
+# Total extracted pages: 4
+============================================================
+
+
+============================================================
+--- PAGE 35 ---
+============================================================
+
+
+--- IMAGES/DIAGRAMS ON THIS PAGE ---
+[DIAGRAM: Thinking_in_system_page35_fig1.png] (Rendered page with vector graphics - Size: 687x147)
+[DIAGRAM: Thinking_in_system_page35_fig2.png] (Rendered page with vector graphics - Size: 433x147)
+--- END IMAGES/DIAGRAMS ---
+
+18 
+PART ONE: SYSTEM STRUCTURE AND BEHAVIOR 
+material or information that has built up over time. It may be the water in 
+a bathtub, a population, the books in a bookstore, the wood in a tree, the 
+money in a bank, your own self-conﬁ dence. A stock does not have to be 
+physical. Your reserve of good will toward others 
+or your supply of hope that the world can be better 
+are both stocks.
+Stocks change over time through the actions of 
+a ﬂ ow. Flows are ﬁ lling and draining, births and 
+deaths, purchases and sales, growth and decay, deposits and withdrawals, 
+successes and failures. A stock, then, is the present memory of the history 
+of changing ﬂ ows within the system.
+For example, an underground mineral deposit is a stock, out of which 
+comes a ﬂ ow of ore through mining. The inﬂ ow of ore into a mineral 
+deposit is minute in any time period less than eons. So I have chosen to 
+draw (Figure 2) a simpliﬁ ed picture of the system without any inﬂ ow. All 
+system diagrams and descriptions are simpliﬁ ed versions of the real world.
+Water in a reservoir behind a dam is a stock, into which ﬂ ow rain and 
+river water, and out of which ﬂ ows evaporation from the reservoir’s surface 
+as well as the water discharged through the dam.
+A stock is the memory of 
+the history of changing 
+ﬂ ows within the system.
+Figure 1. How to read stock-and-ﬂ ow diagrams. In this book, stocks are shown as boxes, and 
+ﬂ ows as arrow-headed “pipes” leading into or out of the stocks. The small T on each ﬂ ow signi-
+ﬁ es a “faucet;” it can be turned higher or lower, on or off . The “clouds” stand for wherever the 
+ﬂ ows come from and go to—the sources and sinks that are being ignored for the purposes of 
+the present discussion.
+outﬂow
+inﬂow
+stock
+mining
+mineral 
+deposit
+Figure 2. A stock of minerals depleted by mining.
+
+
+============================================================
+--- PAGE 36 ---
+============================================================
+
+
+--- IMAGES/DIAGRAMS ON THIS PAGE ---
+[DIAGRAM: Thinking_in_system_page36_fig1.png] (Rendered page with vector graphics - Size: 687x175)
+[DIAGRAM: Thinking_in_system_page36_fig2.png] (Rendered page with vector graphics - Size: 690x224)
+[DIAGRAM: Thinking_in_system_page36_fig3.png] (Rendered page with vector graphics - Size: 687x146)
+--- END IMAGES/DIAGRAMS ---
+
+ 
+CHAPTER ONE: THE BASICS 
+19
+The volume of wood in the living trees in a forest is a stock. Its inﬂ ow is 
+the growth of the trees. Its outﬂ ows are the natural deaths of trees and the 
+harvest by loggers. The logging harvest ﬂ ows into another stock, perhaps 
+an inventory of lumber at a mill. Wood ﬂ ows out of the inventory stock as 
+lumber sold to customers.
+If you understand the dynamics of stocks and ﬂ ows—their behavior over 
+time—you understand a good deal about the behavior of complex systems. 
+And if you have had much experience with a bathtub, you understand the 
+dynamics of stocks and ﬂ ows.
+Imagine a bathtub ﬁ lled with water, with its drain plugged up and its 
+faucets turned off—an unchanging, undynamic, boring system. Now 
+river inﬂow
+discharge
+rain
+evaporation
+water in 
+reservoir
+Figure 3. A stock of water in a reservoir with multiple inﬂ ows and outﬂ ows.
+tree
+growth
+lumber
+sales
+lumber
+inventory
+wood 
+in living
+trees
+logging
+tree
+deaths
+Figure 4. A stock of lumber linked to a stock of trees in a forest.
+outﬂow
+inﬂow
+water
+in tub
+Figure 5. The structure of a bathtub system—one stock with one inﬂ ow and one outﬂ ow.
+
+
+--- TABLES EXTRACTED FROM THIS PAGE ---
+
+[TABLE 1]
+| water in reservoir |  |
+| ------------------ |  |
+[/TABLE]
+
+
+[TABLE 2]
+| in living trees |  |
+| --------------- |  |
+[/TABLE]
+
+--- END TABLES ---
+
+
+============================================================
+--- PAGE 37 ---
+============================================================
+
+
+--- IMAGES/DIAGRAMS ON THIS PAGE ---
+[DIAGRAM: Thinking_in_system_page37_fig1.png] (Rendered page with vector graphics - Size: 482x285)
+[DIAGRAM: Thinking_in_system_page37_fig2.png] (Rendered page with vector graphics - Size: 688x502)
+--- END IMAGES/DIAGRAMS ---
+
+20 
+PART ONE: SYSTEM STRUCTURE AND BEHAVIOR 
+mentally pull the plug. The water runs out, of course. The level of water in 
+the tub goes down until the tub is empty.
+Now imagine starting again with a full tub, and again open the drain, but 
+this time, when the tub is about half empty, turn on the inﬂ ow faucet so 
+the rate of water ﬂ owing in is just equal to that ﬂ owing out. What happens? 
+50
+40
+30
+20
+10
+0
+stock of water in the tub
+0 
+2 
+4 
+6 
+8 
+10
+gallons
+minutes
+Figure 6. Water level in a tub when the plug is pulled.
+A NOTE ON READING GRAPHS 
+OF BEHAVIOR OVER TIME
+Systems thinkers use graphs of system behavior to understand 
+trends over time, rather than focusing attention on individual 
+events. We also use behavior-over-time graphs to learn whether 
+the system is approaching a goal or a limit, and if so, how quickly.
+The variable on the graph may be a stock or a ﬂ ow. The 
+pattern—the shape of the variable line—is important, as are the 
+points at which that line changes shape or direction. The precise 
+numbers on the axes are often less important. 
+The horizontal axis of time allows you to ask questions about 
+what came before, and what might happen next. It can help you 
+focus on the time horizon appropriate to the question or problem 
+you are investigating.
+
+
+============================================================
+--- PAGE 38 ---
+============================================================
+
+
+--- IMAGES/DIAGRAMS ON THIS PAGE ---
+[DIAGRAM: Thinking_in_system_page38_fig1.png] (Rendered page with vector graphics - Size: 567x333)
+[DIAGRAM: Thinking_in_system_page38_fig2.png] (Rendered page with vector graphics - Size: 567x332)
+--- END IMAGES/DIAGRAMS ---
+
+ 
+CHAPTER ONE: THE BASICS 
+21
+The amount of water in the tub stays constant at whatever level it had 
+reached when the inﬂ ow became equal to the outﬂ ow. It is in a state of 
+dynamic equilibrium—its level does not change, although water is contin-
+uously ﬂ owing through it.
+Imagine turning the inﬂ ow on somewhat harder while keeping the outﬂ ow 
+constant. The level of water in the tub slowly rises. If you then turn the inﬂ ow 
+outﬂow
+10
+8
+6
+4
+2
+0
+0 
+2 
+4 
+6 
+8 
+10
+gallons/minute
+minutes
+inﬂow
+stock of water in the tub
+50
+40
+30
+20
+10
+0
+0 
+2 
+4 
+6 
+8 
+10
+gallons
+minutes
+Figure 7. Constant outﬂ ow, inﬂ ow turned on after 5 minutes, and the resulting changes in the 
+stock of water in the tub.

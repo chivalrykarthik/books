@@ -42,5 +42,23 @@
                 "title": "Chapter 12: Mastery: The Power of Love"
             }
         ]
+    },
+    {
+        "id": "Thinking_in_system",
+        "title": "Thinking In System",
+        "author": "Unknown Author",
+        "type": "folder",
+        "cover": "📚",
+        "description": "\"Managers are not confronted with problems that are independent of each other, but with dynamic situations that consist of complex systems of chang...",
+        "chapters": [
+            {
+                "id": "Introduction",
+                "title": "Introduction: The System Lens"
+            },
+            {
+                "id": "Chapter_01_Basics",
+                "title": "Chapter One: The Basics"
+            }
+        ]
     }
 ]
